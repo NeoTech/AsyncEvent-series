@@ -1,4 +1,4 @@
-var Async = require('./AsyncEventSeries');
+var Async = require('asyncevent-series');
 var x = new Array();
 
 function factory(i) {
@@ -14,5 +14,5 @@ for(i = 0; i < (10000*2); i++) {
 }
 
 var y = new Async(x,2000).series().on('done', function() {
-   console.log('Series is done');
+    console.log('Series is done');
 });

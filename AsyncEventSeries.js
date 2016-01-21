@@ -77,7 +77,7 @@ function AsyncEventSeries(funcArray) {
     _self.runjob = funcArray;
     _self._emitter = new EventEmitter();
     _self.on('next', function() { _self.run(arguments); });
-    _self.on('done', function() { _self.endit(); });
+    _self.on('done', function() { var args = arguments[0][0][0][0]; _self.endit(args); });
     return _self;
 };
 
@@ -99,18 +99,18 @@ AsyncEventSeries.prototype.run = function() {
                 }, data);
             })(arguments));
         } else {
-            _self.emit('next');
+            _self.emit('next', arguments);
         }
         delete(t);
     } else {
-        _self.emit('done');
+        _self.emit('done', arguments);
     }
     return _self;
 };
 AsyncEventSeries.prototype.endit = function() {
     var _self = this;
     if(typeof _self.nextjob === 'object') {
-        _self.nextjob.emit('next');
+        _self.nextjob.emit('next', arguments);
     } else {
         _self.emit('finalized');
     }

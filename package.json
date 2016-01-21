@@ -1,0 +1,24 @@
+{
+  "name": "AsyncEvent-series",
+  "version": "0.0.1-alpha",
+  "description": "A library with the aim to circumvent the max callstack exceded error using events and setImmediate pacing",
+  "main": "AsyncEventSeries.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NeoTech/AsyncEvent-series.git"
+  },
+  "keywords": [
+    "Async",
+    "Series",
+    "Event"
+  ],
+  "author": "Andreas Pettersson - andreas@roughedge.se",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NeoTech/AsyncEvent-series/issues"
+  },
+  "homepage": "https://github.com/NeoTech/AsyncEvent-series"
+}

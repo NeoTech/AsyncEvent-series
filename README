@@ -1,0 +1,1 @@
+A library with the aim to circumvent the max callstack exceded error using events and setImmediate pacing.

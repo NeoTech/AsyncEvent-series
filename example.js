@@ -1,15 +1,17 @@
-var Async = require('asyncevent-series');
+var Async = require('./AsyncEventSeries');
 var x = new Array();
 
 function factory(i) {
     var j = i;
-    return function(call) {
+    return function(call,data) {
         console.log('Executing #%s', j);
-        call();
+        var data = data[0] || false;
+        console.log(data);
+        call('Passed on data ' + j);
     }
 }
 
-for(i = 0; i < (10000*2); i++) {
+for(i = 0; i < (5*2); i++) {
     x.push(factory(i));
 }
 

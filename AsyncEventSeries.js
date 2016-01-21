@@ -76,8 +76,8 @@ function AsyncEventSeries(funcArray) {
     var _self = this;
     _self.runjob = funcArray;
     _self._emitter = new EventEmitter();
-    _self.on('next', function() { _self.run(_self.runjob); });
-    _self.on('done', function() { _self.endit() });
+    _self.on('next', function() { _self.run(arguments); });
+    _self.on('done', function() { _self.endit(); });
     return _self;
 };
 
@@ -86,11 +86,18 @@ AsyncEventSeries.prototype.run = function() {
     if(_self.runjob.length > 0) {
         var t = _self.runjob.shift();
         if (typeof t === 'function') {
-            setImmediate(function() {
+            setImmediate((function() {
+                if(typeof arguments === 'object') {
+                    var args = arguments[0][0][0];
+                    var data = new Array();
+                    for(var x in args) {
+                     data.push(args[x]);
+                    }
+                }
                 t(function () {
-                    _self.emit('next');
-                });
-            });
+                    _self.emit('next', arguments);
+                }, data);
+            })(arguments));
         } else {
             _self.emit('next');
         }

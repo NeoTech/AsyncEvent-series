@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 verbose node symlink E:\Program Files\nodejs\\node.exe
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . C:\Users\WARMACHINE\AppData\Roaming\npm-cache\3a52ce78-.lock
+11 verbose tar pack [ 'C:\\Users\\WARMACHINE\\AppData\\Roaming\\npm-cache\\asyncevent-series\\0.0.1-alpha\\package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball C:\Users\WARMACHINE\AppData\Roaming\npm-cache\asyncevent-series\0.0.1-alpha\package.tgz
+13 verbose folder .
+14 info prepublish asyncevent-series@0.0.1-alpha
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. C:\Users\WARMACHINE\AppData\Roaming\npm-cache\1f1177db-tar.lock
+17 silly lockFile f76a8b86-t-series-0-0-1-alpha-package-tgz tar://C:\Users\WARMACHINE\AppData\Roaming\npm-cache\asyncevent-series\0.0.1-alpha\package.tgz
+18 verbose lock tar://C:\Users\WARMACHINE\AppData\Roaming\npm-cache\asyncevent-series\0.0.1-alpha\package.tgz C:\Users\WARMACHINE\AppData\Roaming\npm-cache\f76a8b86-t-series-0-0-1-alpha-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile f76a8b86-t-series-0-0-1-alpha-package-tgz tar://C:\Users\WARMACHINE\AppData\Roaming\npm-cache\asyncevent-series\0.0.1-alpha\package.tgz
+22 silly lockFile f76a8b86-t-series-0-0-1-alpha-package-tgz tar://C:\Users\WARMACHINE\AppData\Roaming\npm-cache\asyncevent-series\0.0.1-alpha\package.tgz
+23 silly lockFile b7bc8b20-event-series-0-0-1-alpha-package C:\Users\WARMACHINE\AppData\Roaming\npm-cache\asyncevent-series\0.0.1-alpha\package
+24 verbose lock C:\Users\WARMACHINE\AppData\Roaming\npm-cache\asyncevent-series\0.0.1-alpha\package C:\Users\WARMACHINE\AppData\Roaming\npm-cache\b7bc8b20-event-series-0-0-1-alpha-package.lock
+25 silly lockFile b7bc8b20-event-series-0-0-1-alpha-package C:\Users\WARMACHINE\AppData\Roaming\npm-cache\asyncevent-series\0.0.1-alpha\package
+26 silly lockFile b7bc8b20-event-series-0-0-1-alpha-package C:\Users\WARMACHINE\AppData\Roaming\npm-cache\asyncevent-series\0.0.1-alpha\package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'asyncevent-series',
+29 silly publish   version: '0.0.1-alpha',
+29 silly publish   description: 'A library with the aim to circumvent the max callstack exceded error using events and setImmediate pacing',
+29 silly publish   main: 'AsyncEventSeries.js',
+29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/NeoTech/AsyncEvent-series.git' },
+29 silly publish   keywords: [ 'Async', 'Series', 'Event' ],
+29 silly publish   author: { name: 'Andreas Pettersson - andreas@roughedge.se' },
+29 silly publish   license: 'MIT',
+29 silly publish   bugs: { url: 'https://github.com/NeoTech/AsyncEvent-series/issues' },
+29 silly publish   homepage: 'https://github.com/NeoTech/AsyncEvent-series',
+29 silly publish   readme: 'A library with the aim to circumvent the max callstack exceded error using events and setImmediate pacing.',
+29 silly publish   readmeFilename: 'README',
+29 silly publish   gitHead: '0c5c5d2686ce834fe2e528cd7713642815b5ac03',
+29 silly publish   _id: 'asyncevent-series@0.0.1-alpha',
+29 silly publish   _shasum: '32838f8fc4cf447bae8529a3afb8a2f6588203b2',
+29 silly publish   _from: '.' }
+30 verbose request where is /asyncevent-series
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 8a0e451cffb9f86f
+33 verbose url raw /asyncevent-series
+34 verbose url resolving [ 'https://registry.npmjs.org/', './asyncevent-series' ]
+35 verbose url resolved https://registry.npmjs.org/asyncevent-series
+36 verbose request where is https://registry.npmjs.org/asyncevent-series
+37 info trying registry request attempt 1 at 12:52:50
+38 http PUT https://registry.npmjs.org/asyncevent-series
+39 http 403 https://registry.npmjs.org/asyncevent-series
+40 verbose headers { 'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=300',
+40 verbose headers   'content-length': '101',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   date: 'Thu, 21 Jan 2016 11:52:48 GMT',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'x-served-by': 'cache-fra1224-FRA',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1453377166.529847,VS0,VE1519' }
+41 error publish Failed PUT 403
+42 error Error: "You cannot publish over the previously published version 0.0.1-alpha." : asyncevent-series
+42 error     at RegClient.<anonymous> (E:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+42 error     at Request._callback (E:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+42 error     at Request.self.callback (E:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (E:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (E:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:944:16
+42 error     at process._tickCallback (node.js:448:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Windows_NT 6.2.9200
+45 error command "E:\\Program Files\\nodejs\\\\node.exe" "E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error cwd E:\__SAVE\wamp\www\SandboxUtils\AsyncEvent-series
+47 error node -v v0.10.40
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]

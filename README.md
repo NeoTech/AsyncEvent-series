@@ -2,7 +2,7 @@ A library with the aim to circumvent the max callstack exceded error using event
 
 Example of useage.... In this case with mysql from a dev database with 500.000+ lines of clients.
 ----------------------
-'''
+```
 var Async = require('asyncevent-series');
 var x = new Array();
 var pool = require('./globals');
@@ -34,4 +34,4 @@ var y = new Async(x,5).series().on('done', function() {
         console.log('Series is done');
     })
 });
-'''
+```

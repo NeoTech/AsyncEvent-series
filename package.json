@@ -1,6 +1,6 @@
 {
   "name": "asyncevent-series",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A library with the aim to circumvent the max callstack exceded error using events and setImmediate pacing",
   "main": "AsyncEventSeries.js",
   "scripts": {
